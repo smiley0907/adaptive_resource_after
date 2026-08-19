@@ -12,3 +12,14 @@ final_comparison = comparison_df[
 ].copy()
 
 display(final_comparison)
+
+# ============================================================
+# CELL 28: EXPORT FINAL COMPARISON
+# ============================================================
+
+final_comparison.to_csv(
+    "comparison_results.csv",
+    index=False
+)
+
+print("Saved: comparison_results.csv")
